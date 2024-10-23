@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лотерея Toncoin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="lottery-container">
+        <h1>Добро пожаловать в Лотерею Toncoin!</h1>
+
+        <div class="pool">
+            <h2>Пул 0.1 Toncoin</h2>
+            <p>Текущий призовой фонд: <span id="fund-0-1">0 Toncoin</span></p>
+            <p>Количество участников: <span id="participants-0-1">0</span></p>
+            <button onclick="joinPool(0.1)">Присоединиться</button>
+        </div>
+
+        <div class="pool">
+            <h2>Пул 0.5 Toncoin</h2>
+            <p>Текущий призовой фонд: <span id="fund-0-5">0 Toncoin</span></p>
+            <p>Количество участников: <span id="participants-0-5">0</span></p>
+            <button onclick="joinPool(0.5)">Присоединиться</button>
+        </div>
+
+        <div class="pool">
+            <h2>Пул 1 Toncoin</h2>
+            <p>Текущий призовой фонд: <span id="fund-1">0 Toncoin</span></p>
+            <p>Количество участников: <span id="participants-1">0</span></p>
+            <button onclick="joinPool(1)">Присоединиться</button>
+        </div>
+
+        <div id="message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
